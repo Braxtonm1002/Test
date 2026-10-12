@@ -3,31 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test Website</title>
+  <title>Gloss Boss Auto Care | Luxury Mobile Car Detailing in Indianapolis</title>
+  <meta name="description" content="Gloss Boss Auto Care is a fully insured, professionally trained mobile car detailing service serving Indianapolis, Avon, Brownsburg and Plainfield.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="card">
-    <h1>Hello, world! 👋</h1>
-    <p class="subtitle">Welcome to your test website.</p>
+  <header class="site-header">
+    <a class="brand" href="#top">Gloss Boss <span>Auto Care</span></a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#area">Service Area</a>
+      <a class="btn btn-small" href="tel:3176260236">Call Now</a>
+    </nav>
+  </header>
 
-    <p class="clock" id="clock" aria-live="off"></p>
-
-    <section>
-      <h2>Click counter</h2>
-      <button id="counter-btn" type="button">Clicked 0 times</button>
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Luxury Mobile Detailing</p>
+      <h1>Your Vehicle Deserves<br>The Boss Treatment.</h1>
+      <p class="lead">Showroom-level care for your Lexus, Mercedes, Cadillac and every car you love, brought right to your driveway.</p>
+      <div class="hero-actions">
+        <a class="btn" href="tel:3176260236">Call 317-626-0236</a>
+        <a class="btn btn-outline" href="#pricing">View Pricing</a>
+      </div>
+      <ul class="badges">
+        <li>Fully Insured</li>
+        <li>Professionally Trained</li>
+        <li>100% Mobile</li>
+      </ul>
     </section>
 
-    <section>
-      <h2>Pick a theme</h2>
-      <div class="themes">
-        <button type="button" data-theme="sunset">Sunset</button>
-        <button type="button" data-theme="ocean">Ocean</button>
-        <button type="button" data-theme="forest">Forest</button>
+    <section id="services" class="section">
+      <h2>Our Services</h2>
+      <div class="divider"></div>
+      <div class="grid two">
+        <article class="panel">
+          <h3>Interior</h3>
+          <ul>
+            <li>Interior Cleaning</li>
+            <li>Deep Shampooing</li>
+            <li>Sanitization</li>
+            <li>Odor Elimination</li>
+            <li>Stain Removal</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3>Exterior</h3>
+          <ul>
+            <li>Deep Wash</li>
+            <li>Heavy Dirt &amp; Grit Removal</li>
+            <li>Protective Waxing</li>
+            <li>Tire Shining</li>
+            <li>Clay Barring</li>
+          </ul>
+        </article>
       </div>
+    </section>
+
+    <section id="pricing" class="section alt">
+      <h2>Pricing</h2>
+      <div class="divider"></div>
+      <div class="grid three">
+        <article class="panel price">
+          <h3>Basic Interior</h3>
+          <p class="amount">$110</p>
+          <p>A thorough interior detail.</p>
+        </article>
+        <article class="panel price featured">
+          <h3>Interior + Wash</h3>
+          <p class="amount">$130</p>
+          <p>Basic interior with an exterior wash added for just $20 more.</p>
+        </article>
+        <article class="panel price">
+          <h3>Stand-Alone Wash</h3>
+          <p class="amount">$50</p>
+          <p>A professional exterior wash on its own.</p>
+        </article>
+      </div>
+      <p class="note">Additional services start at <strong>$15</strong> each, and may cost more depending on the work needed.</p>
+    </section>
+
+    <section id="area" class="section">
+      <h2>We Come To You</h2>
+      <div class="divider"></div>
+      <p class="center-text">Gloss Boss Auto Care is fully mobile, serving the greater Indianapolis area including:</p>
+      <ul class="areas">
+        <li>Indianapolis</li>
+        <li>Avon</li>
+        <li>Brownsburg</li>
+        <li>Plainfield</li>
+      </ul>
+      <p class="center-text">All I need is access to <strong>water</strong> and <strong>power</strong>.</p>
+    </section>
+
+    <section class="cta">
+      <h2>Ready for a Flawless Finish?</h2>
+      <p>Call or text to book your detail today.</p>
+      <a class="btn" href="tel:3176260236">317-626-0236</a>
     </section>
   </main>
 
-  <script src="script.js"></script>
+  <footer>
+    <p>&copy; Gloss Boss Auto Care &middot; Fully Insured &amp; Trained &middot; <a href="tel:3176260236">317-626-0236</a></p>
+  </footer>
 </body>
 </html>
