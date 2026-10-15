@@ -289,6 +289,124 @@ h2 {
   font-size: 0.85rem;
 }
 
+/* Booking form */
+.booking {
+  max-width: 760px;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.booking fieldset {
+  margin: 0;
+  min-width: 0;
+}
+
+.booking legend {
+  float: left;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.4rem;
+  color: var(--gold-light);
+}
+
+.booking legend + * {
+  clear: both;
+}
+
+.booking legend small {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.booking h3 {
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 0.5rem;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid #2a2a30;
+  cursor: pointer;
+}
+
+.choice:last-child {
+  border-bottom: none;
+}
+
+.choice span {
+  margin-left: auto;
+  color: var(--gold-light);
+}
+
+.choice input {
+  accent-color: var(--gold);
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.fields label,
+.booking .full {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.booking .full {
+  margin-top: 1rem;
+}
+
+.booking input:not([type="radio"]):not([type="checkbox"]),
+.booking select,
+.booking textarea {
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  background: var(--black);
+  color: var(--text);
+  border: 1px solid #33333a;
+  border-radius: 2px;
+  font: inherit;
+  font-size: 1rem;
+  text-transform: none;
+  letter-spacing: normal;
+  color-scheme: dark;
+}
+
+.booking input:focus,
+.booking select:focus,
+.booking textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.booking button {
+  justify-self: center;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+}
+
+.honey {
+  display: none;
+}
+
 /* Call to action */
 .cta {
   text-align: center;

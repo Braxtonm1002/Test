@@ -14,6 +14,7 @@
       <a href="#services">Services</a>
       <a href="#pricing">Pricing</a>
       <a href="#area">Service Area</a>
+      <a href="#book">Book</a>
       <a class="btn btn-small" href="sms:+13176260236?&amp;body=Hello%21%20I%20am%20interested%20in%20getting%20more%20information%20on%20getting%20my%20vehicle%20detailed%20with%20Gloss%20Boss%20Auto%20Care.">Message Now</a>
     </nav>
   </header>
@@ -95,6 +96,78 @@
         <li>Plainfield</li>
       </ul>
       <p class="center-text">All I need is access to <strong>water</strong> and <strong>power</strong>.</p>
+    </section>
+
+    <section id="book" class="section alt">
+      <h2>Book Your Detail</h2>
+      <div class="divider"></div>
+      <p class="center-text">Pick your services, tell me about your vehicle, and I'll reach out to confirm your appointment.</p>
+
+      <form class="booking" action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+        <input type="hidden" name="_subject" value="New Gloss Boss Booking Request">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off">
+
+        <fieldset class="panel">
+          <legend>Packages</legend>
+          <label class="choice"><input type="radio" name="Package" value="Basic Interior ($110)" required> Basic Interior <span>$110</span></label>
+          <label class="choice"><input type="radio" name="Package" value="Interior + Wash ($130)"> Interior + Wash <span>$130</span></label>
+          <label class="choice"><input type="radio" name="Package" value="Stand-Alone Wash ($50)"> Stand-Alone Wash <span>$50</span></label>
+          <label class="choice"><input type="radio" name="Package" value="Add-ons only"> Add-ons only</label>
+        </fieldset>
+
+        <fieldset class="panel">
+          <legend>Add-On Services <small>(from $15 each)</small></legend>
+          <div class="grid two">
+            <div>
+              <h3>Interior</h3>
+              <label class="choice"><input type="checkbox" name="Add-ons" value="Deep Shampooing"> Deep Shampooing</label>
+              <label class="choice"><input type="checkbox" name="Add-ons" value="Sanitization"> Sanitization</label>
+              <label class="choice"><input type="checkbox" name="Add-ons" value="Odor Elimination"> Odor Elimination</label>
+              <label class="choice"><input type="checkbox" name="Add-ons" value="Stain Removal"> Stain Removal</label>
+            </div>
+            <div>
+              <h3>Exterior</h3>
+              <label class="choice"><input type="checkbox" name="Add-ons" value="Heavy Dirt &amp; Grit Removal"> Heavy Dirt &amp; Grit Removal</label>
+              <label class="choice"><input type="checkbox" name="Add-ons" value="Protective Waxing"> Protective Waxing</label>
+              <label class="choice"><input type="checkbox" name="Add-ons" value="Tire Shining"> Tire Shining</label>
+              <label class="choice"><input type="checkbox" name="Add-ons" value="Clay Bar Treatment"> Clay Bar Treatment</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="panel">
+          <legend>Your Info</legend>
+          <div class="fields">
+            <label>Full Name<input type="text" name="Name" autocomplete="name" required></label>
+            <label>Phone Number<input type="tel" name="Phone" autocomplete="tel" required></label>
+            <label>Email<input type="email" name="email" autocomplete="email" required></label>
+            <label>Service Address<input type="text" name="Address" autocomplete="street-address" placeholder="Where should I come?"></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="panel">
+          <legend>Your Vehicle</legend>
+          <div class="fields">
+            <label>Year<input type="text" name="Vehicle Year" inputmode="numeric" placeholder="e.g. 2021" required></label>
+            <label>Make<input type="text" name="Vehicle Make" placeholder="e.g. Lexus" required></label>
+            <label>Model<input type="text" name="Vehicle Model" placeholder="e.g. RX 350" required></label>
+            <label>Color<input type="text" name="Vehicle Color"></label>
+            <label>Vehicle Type
+              <select name="Vehicle Type">
+                <option>Sedan / Coupe</option>
+                <option>SUV / Crossover</option>
+                <option>Truck</option>
+                <option>Van / Minivan</option>
+              </select>
+            </label>
+            <label>Preferred Date<input type="date" name="Preferred Date"></label>
+          </div>
+          <label class="full">Anything I should know?<textarea name="Notes" rows="3" placeholder="Pet hair, stains, special requests..."></textarea></label>
+        </fieldset>
+
+        <button type="submit" class="btn">Send Booking Request</button>
+      </form>
     </section>
 
     <section class="cta">
